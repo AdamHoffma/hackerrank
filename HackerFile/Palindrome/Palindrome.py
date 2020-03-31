@@ -2,7 +2,8 @@
 def countSubstrings(string):        
     lp = 0
     rp = lp + 1
-    tempstr = list(string[lp] + string[rp])    
+    tempstr = list(string[lp] + string[rp])   
+    print(len(tempstr)) 
     while lp < len(string) -1:
         if string[rp] == string[lp]:
             substring(tempstr, string)
@@ -10,7 +11,7 @@ def countSubstrings(string):
         elif string[rp] != string[lp]:
             rp + 1
             tempstr.append(string[rp])
-        else:
+        elif rp == len(string):
             lp + 1
             rp = lp + 1
             tempstr = list(string[lp] + string[rp])
@@ -21,7 +22,7 @@ def substring(tempstr, string):
         return counter + 1
     else:
         lsubp = 1
-        rsubp = len(tempstr) -2
+        rsubp = len(tempstr) -1
 
         while lsubp < rsubp:
             if tempstr[lsubp] == tempstr[rsubp] and lsubp + 1 >= rsubp:

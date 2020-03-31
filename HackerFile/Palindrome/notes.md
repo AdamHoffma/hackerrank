@@ -8,3 +8,16 @@
 #One at last index
 #Move forward and backward simultaneously 
 #Move until they dont match
+
+String = 10
+
+N = length of string
+answer = 0
+
+range of 19?
+left = 9
+right = 0
+
+while left is bigger then right and right is smaller then N and left string equals right string
+
+"abcdefa
