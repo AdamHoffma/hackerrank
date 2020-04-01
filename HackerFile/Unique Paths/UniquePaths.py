@@ -18,13 +18,12 @@ def paths(m, n):
     if not m or not n:
         return 0
     cur = [1] * n
-    for i in range(1, m):
+    for i in range(1, m):        
         for j in range(1, n):
-            cur[j] += cur[j-1]
-            print(cur[j])
+            cur[j] += cur[j-1]            
     return cur[-1]
 
-print(paths(7, 3))
+print(paths(100, 100))
 
 
 
