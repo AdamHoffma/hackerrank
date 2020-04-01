@@ -7,7 +7,7 @@ def uniquePaths(n, m):
         return 1        
     
     return uniquePaths(n - 1, m) + uniquePaths(n, m - 1)
-print(uniquePaths(7, 7))
+print(uniquePaths(13, 13))
     """
 
 elapsed_time = timeit.timeit(code_to_test, number=1)/1
