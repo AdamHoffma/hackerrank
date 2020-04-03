@@ -1,0 +1,1 @@
+You are given q queries. Eacy query specifies an operation taht needs to be performed
