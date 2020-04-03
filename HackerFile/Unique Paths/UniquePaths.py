@@ -20,10 +20,11 @@ def paths(m, n):
     cur = [1] * n
     for i in range(1, m):        
         for j in range(1, n):
-            cur[j] += cur[j-1]            
+            cur[j] += cur[j-1]
+            print(cur[j] , cur[j-1])            
     return cur[-1]
 
-print(paths(100, 100))
+print(paths(3, 3))
 
 
 
