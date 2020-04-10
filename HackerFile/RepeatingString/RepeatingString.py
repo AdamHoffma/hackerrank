@@ -13,4 +13,4 @@ def repeatingString(s, n):
 
     return pointer
 
-print(repeatingString("Thisisthesavage"))
+print(repeatingString("Thisisthesavage", 4))
