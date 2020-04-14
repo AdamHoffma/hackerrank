@@ -12,10 +12,16 @@ If a number moved more then two spots return TOO CHAOTIC
 #We could track number vs index?  5 would have index 4 if it's index is more then 4 -2 TOO CHAOTIC
 #Number - 1 - index equals moves?
 #What to do with negative numbers? I.E. an integer that has moved back in the queue? 
+#Instead of thinking who moved forward, ask who moved backwards. The amount of backwards moves = bribes
+#On the right track with Too Chaotic, now figure out amount of bribes
 
 3 - 1 - 0 = 2
 4 - 1 - 1 = 2
 2 - 1 - 2 = -1
 1 - 1 - 3 = -3
 5 - 1 - 4 = 0
+
+New index - orignal?
+
+
 
