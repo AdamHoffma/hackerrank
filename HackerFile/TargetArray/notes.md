@@ -20,3 +20,8 @@ nums       index     target
 2            2        [0,1,2]
 3            2        [0,1,3,2]
 4            1        [0,4,1,3,2]
+
+I'll need an empty target array
+Need to grab the value from nums array and put it in the target array at index value
+Thinking splice as I go? grab first value and first value then splice it off?
+How do I loop two arrays...
