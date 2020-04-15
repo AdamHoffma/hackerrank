@@ -14,3 +14,17 @@ function rob(nums) {
     let odd = arr.reduce((a, b) => a + b, 0)
     return Math.max(even, odd)
 }
+
+function rob(nums) {
+    let solution = {}
+    solution[nums.length] = 0
+    solution[nums.length - 1] = nums[nums.length - 1]
+    
+    for (let i = nums.length-2; i >= 0; i--) {
+      solution[i] = Math.max(nums[i] + solution[i + 2], solution[i+1])
+      
+    }
+    return solution
+  }
+  
+  console.log(rob([2, 1, 1, 2]))
