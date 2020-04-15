@@ -7,7 +7,7 @@ function rob(nums) {
             arr.push(nums[i])
         }
         else if (i % 2 == 1) {
-            arr.push(nums[i])
+            arr2.push(nums[i])
         }
     }
     let even = arr.reduce((a, b) => a + b, 0)
