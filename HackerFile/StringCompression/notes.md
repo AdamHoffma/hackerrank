@@ -21,3 +21,10 @@ Return 6, and the first 6 characters of the input array should be: ["a","2","b",
 
 Explanation:
 "aa" is replaced by "a2". "bb" is replaced by "b2". "ccc" is replaced by "c3".
+
+#We will have to loop through the array
+#const createTargetArray = (nums, idx) => {
+    let target = []
+    for(const i in nums)target.splice(idx[i], 0, nums[i])
+    return target
+};
